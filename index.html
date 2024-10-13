@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Men's Shoe Shop</title>
+    <style>
+        body {display: flex; flex-direction: column; align-items: center;}
+        h3 {background-color: lightskyblue ; border-radius: 20px; border: solid 3px; text-indent: 20px; text-align: center;}
+        .container { position: relative; text-align: center; color: white;}
+        .centered {position: absolute;top: 50%;left: 50%; transform: translate(-50%, -50%);font-size: 40px;}
+        .column {display: flex;}
+        .row {border: solid 3px; }
+        .row1 {padding-right: 40px;}
+        .row2 {padding-left: 90px;padding-right: 100px;}
+        .row4 {padding-right: 90px;}
+        .row5 {padding-left: 100px;}
+        label {background-color: lightgray; padding: 4px; border-radius: 10px; font-size: large;}
+        .row6 {padding-left: 90px; padding-right: 90px;} 
+        .button {background-color: #04AA6D;border: none;color: white;padding: 10px; text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;transition-duration: 0.4s;cursor: pointer;}
+        .button1 { background-color: white; color: black; border: 2px solid #04AA6D; border-radius: 20px;}
+        .button1:hover {background-color: #04AA6D;color: white;}
+  </style>
+</head>
+<body>
+    
+    <h1>Nike Men's Shoe Shop </h1>
+    <br>
+    <div class="column">
+    <div class="row">
+    <div class="container">
+      <img src="kyrie5.avif" alt="Kyrie 5 dark crimson" width="400">
+        <div class="centered">Mr.Breast</div>
+       <h2>.</h2>
+    </div>
+    </div>
+    <div class="row">
+        <img src="ja1.webp" alt="Ja1 shoes" width="400">
+    </div>
+    <div class="row">
+        <img src="kdtrey.webp" alt="kd trey 5 x" width="400">
+    </div>
+    </div>
+    <div class="column">
+        <div class="row1"> <h3>Kyrie 5 Low "Dark Crimson" <br>USD 99.99/PHP 5,592</h3></div>
+        <div class="row2"><h3>  Ja 1 EP "Personal Touch (Iron Gray)"<br>USD 120/PHP 6,711</h3></div>
+        <div class="row3"><h3>KD Trey 5 X "Light Orewood Greenstrike" <br>USD 150/PHP 8,389</h3></div>
+    </div>
+    <div class="column">
+        <div class="row6"><form>  <label>Sizes (US Men's):</label> <select><option value="M 7">M 7</option><option value="M 8">M 8</option><option value="M 9">M 9</option><option value="M 10">M10</option><option value="M 11">M 11</option></select><button type="button" onclick="myFunction()" class="button button1">Add to cart</button></form></div>
+        <div class="row6"><form>  <label>Sizes (US Men's):</label> <select><option value="M 7">M 7</option><option value="M 8">M 8</option><option value="M 9">M 9</option><option value="M 10">M10</option><option value="M 11">M 11</option></select><button type="button" onclick="myFunction()" class="button button1">Add to cart</button></form></div>
+        <div class="row6"><form>  <label>Sizes (US Men's):</label> <select><option value="M 7">M 7</option><option value="M 8">M 8</option><option value="M 9">M 9</option><option value="M 10">M10</option><option value="M 11">M 11</option></select><button type="button" onclick="myFunction()" class="button button1">Add to cart</button></form></div>
+    </div><br><br>
+    <div class="column">
+    <div class="row">
+        <img src="russ.webp" alt="jordan 1 take 5" width="800">
+    </div>
+    <div class="row">
+        <img src="sab2.avif" alt="sabrina 2s" width="400">
+    </div>
+    <div class="row">
+        <img src="kob6pro.jpg" alt="Kobe 6 protro reverse grinch" width="400">
+    </div>
+    </div>
+    <div class="column">
+        <div class="row4"> <h3>Jordan One Take 5 "Quai 54 PF"<br>USD 98/PHP 5,495</h3></div>
+        <div class="row2"><h3> Sabrina 2 EP "USA"<br>USD 135/PHP 7,395</h3></div>
+        <div class="row5"><h3>Kobe 6 Protro "Reverse Grinch"<br>USD 180/PHP 9,895</h3></div>
+    </div>
+    <div class="column">
+        <div class="row6"><form>  <label>Sizes (US Men's):</label> <select><option value="M 7">M 7</option><option value="M 8">M 8</option><option value="M 9">M 9</option><option value="M 10">M10</option><option value="M 11">M 11</option></select><button type="button" onclick="myFunction()" class="button button1">Add to cart</button></form></div>
+        <div class="row6"><form>  <label>Sizes (US Men's):</label> <select><option value="M 7">M 7</option><option value="M 8">M 8</option><option value="M 9">M 9</option><option value="M 10">M10</option><option value="M 11">M 11</option></select><button type="button" onclick="myFunction()" class="button button1">Add to cart</button></form></div>
+        <div class="row6"><form>  <label>Sizes (US Men's):</label> <select><option value="M 7">M 7</option><option value="M 8">M 8</option><option value="M 9">M 9</option><option value="M 10">M10</option><option value="M 11">M 11</option></select><button type="button" onclick="myFunction()" class="button button1">Add to cart</button></form></div>
+    </div><br><br><br><br>
+    <p>Items in your cart:</p>
+
+<p id="demo">0</p>
+
+<script>
+var add = (function () {
+  var counter = 0;
+  return function () {return counter += 1;}
+})();
+
+function myFunction(){
+  document.getElementById("demo").innerHTML = add();
+}
+</script> 
+</body>
+</html>
